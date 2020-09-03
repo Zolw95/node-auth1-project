@@ -16,7 +16,7 @@ server.use(
   session({
     resave: false, // avoid recreating sessions that have not changed
     saveUninitialized: false, // to comply with GDPR laws
-    secret: "keep it secret, keep it save", // cryptographically sign the cookie
+    secret: "keep it secret, keep it safe", // cryptographically sign the cookie
     store: new KnexSessionStore({
       knex: db, // configured instance of knex
       createTable: true, // if the session table doesnt exist, create it automatically
